@@ -1,3 +1,7 @@
+'''
+Associated YT tutorial: https://www.youtube.com/watch?v=gmjzbpSVY1A&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3&index=6
+'''
+
 import numpy as np 
 import nnfs
 
@@ -25,9 +29,36 @@ class Layer_Dense:
     def forward(self, inputs):
         self.output = np.dot(inputs, self.weights) + self.biases
 
+# Activation function = step unit
+
+class Activation_Step:
+    def forward(self, inputs):
+        for i in inputs:
+            if i > 0:
+                self.output.append(1)
+            else:
+                self.output.append(0)
+
+# Activation function = sigmoid
+
+class Activation_Sigmoid:
+    def forward(self, inputs):
+        for i in inputs:
+            if i > 0:
+                self.output.append(1 / (1 - math.exp(-1*abs(i))))
+            else:
+                self.output.append(0)
+
+# Activation function = Rectified Linear Unit ( ReLU )
 
 class Activation_ReLU:
     def forward(self, inputs):
+        #for i in inputs:
+        #    if i > 0:
+        #        self.output.append(i)
+        #    else:
+        #        self.output.append(0)
+        
         self.output = np.maximum(0, inputs)
 
 

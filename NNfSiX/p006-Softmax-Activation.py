@@ -1,3 +1,7 @@
+'''
+Associated YT tutorial: https://www.youtube.com/watch?v=omz_NdFgWyU&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3&index=7
+'''
+
 # code to match https://www.youtube.com/watch?v=omz_NdFgWyU&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3&index=6
 import numpy as np 
 import nnfs
