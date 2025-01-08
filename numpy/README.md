@@ -1,4 +1,6 @@
-### When using numpy library ( for mathematical operations on series/list of numbers ):
+### Notes about numpy library
+
+Types of lists for mathematical operations on series/list of numbers:
 
 * list = 1D array ( vector )
 
